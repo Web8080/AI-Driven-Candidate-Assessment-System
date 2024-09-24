@@ -260,6 +260,9 @@ The AI-Driven Candidate Assessment System is a recruitment tool designed to stre
 6. Results:
 
 The system is capable of receiving resumes, extracting relevant skills, comparing them with job requirements, and generating reports. It reduces the manual effort involved in screening candidates, making the recruitment process faster and more efficient.
+
+
+
 7. Limitations and Future Improvements:
 
     The current skill extraction is based on a simple rule-based approach. In future updates, the AI model will be improved using Named Entity Recognition (NER) or a specialized skill extraction model for more accurate results.
