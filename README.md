@@ -267,3 +267,30 @@ The system is capable of receiving resumes, extracting relevant skills, comparin
 
     The current skill extraction is based on a simple rule-based approach. In future updates, the AI model will be improved using Named Entity Recognition (NER) or a specialized skill extraction model for more accurate results.
     Additional improvements to the job keyword list and custom skills dictionary could further enhance accuracy.
+
+
+
+. Challenges Faced:
+
+    Skill Extraction Accuracy: The basic rule-based approach (identifying nouns and proper nouns) sometimes misses relevant skills or extracts irrelevant terms.
+    Parsing Diverse Resume Formats: Variability in how candidates format their resumes can impact text extraction accuracy.
+    Keyword Matching: Ensuring that the extracted skills are relevant and adequately matched against the predefined job keywords.
+
+2. Potential Use Cases:
+
+    Recruitment Automation: HR departments can automatically screen and shortlist candidates based on skills.
+    Skill Gap Analysis: Helps identify skill gaps between a candidate’s qualifications and job requirements.
+    Job Fit Prediction: Predicts how well a candidate’s skills match the job requirements.
+
+3. Security Considerations:
+
+    Data Privacy: Candidate information must be stored securely, especially sensitive details like resumes and personal responses.
+    Secure File Upload: Ensure file uploads are sanitized to prevent malicious files from being uploaded.
+    Database Security: PostgreSQL should be configured with proper access controls, encryption, and regular security patches.
+
+4. Detailed Example Scenario:
+
+    Step 1: A candidate submits a resume and answers job-related questions through the frontend form.
+    Step 2: The system processes the resume, extracting skills such as "Python," "SQL," and "Data Analysis."
+    Step 3: The extracted skills are compared against the job keyword list. If 5 out of 10 required skills match, the candidate is scored accordingly.
+    Step 4: A PDF report is generated with the evaluation results and stored in the database for HR to review.
